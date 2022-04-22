@@ -33,18 +33,7 @@ group = "io.github.g0dkar"
 version = "3.1.0"
 
 kotlin {
-    jvm {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "1.8"
-                freeCompilerArgs = listOf("-Xjsr305=strict")
-            }
-        }
 
-        testRuns["test"].executionTask.configure {
-            useJUnitPlatform()
-        }
-    }
 
     android {
         publishLibraryVariants("release")
@@ -63,8 +52,6 @@ kotlin {
                 implementation("org.junit.jupiter:junit-jupiter-engine:5.7.0")
             }
         }
-        val jvmMain by getting
-        val jvmTest by getting
         val androidMain by getting
         val androidTest by getting
     }
