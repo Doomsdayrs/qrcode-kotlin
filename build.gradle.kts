@@ -30,7 +30,7 @@ plugins {
 }
 
 group = "io.github.g0dkar"
-version = "3.1.0"
+version = "3.1.0b"
 
 kotlin {
 
